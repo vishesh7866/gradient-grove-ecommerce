@@ -1,11 +1,10 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import Hero from '@/components/Hero';
 import ProductCard from '@/components/ProductCard';
+import StreetStyleCollection from '@/components/StreetStyleSection';
 import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { getFeaturedProducts, getNewProducts, getBestSellers, categories } from '@/lib/data';
 
 const Index = () => {
@@ -15,8 +14,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen page-enter">
-      {/* Hero Section */}
       <Hero />
+      
+      <StreetStyleCollection />
+      
+      {/* ... keep existing code (rest of the sections) the same ... */}
       
       {/* Featured Products Section */}
       <section className="py-20 px-6">
